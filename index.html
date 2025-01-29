@@ -1,32 +1,213 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Compétences</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Portfolio - Langages</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <section class="skills">
-        <h2>Langages de programmation</h2>
-        <div class="icons">
-            <div class="icon"><i class="fab fa-python"></i> Python</div>
-            <div class="icon"><i class="fas fa-code"></i> C++</div>
-            <div class="icon"><i class="fab fa-php"></i> PHP</div>
-            <div class="icon"><i class="fab fa-html5"></i> HTML</div>
-            <div class="icon"><i class="fab fa-js"></i> JavaScript</div>
-            <div class="icon"><i class="fas fa-database"></i> SQL</div>
+    <section class="about-section">
+        <h2 class="fade-in">À propos de moi</h2>
+        <p class="fade-in">Je suis <span class="highlight">Grazex</span>, un développeur en informatique depuis mes 15 ans, spécialisé dans le développement de <span class="highlight">jeux vidéo</span> et passionné par la création de contenus utiles et interactives.</p>
+        <p class="fade-in">Avec une solide expérience en <span class="highlight">Php</span>, <span class="highlight">C++</span>, et d'autres langages, j'aime repousser les limites de la technologie pour donner vie à des idées innovantes.</p>
+    </section>
+    </div>
+    <section class="section">
+        <h2>Langages</h2>
+        <div class="grid">
+            <div class="card"  data-aos="fade-up" onclick="location.href='https:/\/cplusplus.com/'">
+                <img src="/assets/images/cplusplus.png" alt="Python">
+                <p>C++</p>
+            </div>
+            <div class="card"  data-aos="fade-up" onclick="location.href='https:/\/docs.python.org/3/'">
+                <img src="/assets/images/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/www.php.net/docs.php'">
+                <img src="/assets/images/php.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/developer.mozilla.org/en-US/docs/Web/JavaScript'">
+                <img src="/assets/images/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/developer.mozilla.org/en-US/docs/Web/HTML'">
+                <img src="/assets/images/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/developer.mozilla.org/en-US/docs/Web/CSS'">
+                <img src="/assets/images/css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/fr.wikipedia.org/wiki/Structured_Query_Language'">
+                <img src="/assets/images/sql.png" alt="SQL">
+                <p>SQL</p>
+            </div>
         </div>
     </section>
+    <section class="section">
+        <h2>Frameworks</h2>
+        <div class="grid">
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/symfony.com/'">
+                <img src="/assets/images/symfony.png" alt="Python">
+                <p>Symfony</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/api-platform.com/'">
+                <img src="/assets/images/react.png" alt="PHP">
+                <p>React</p>
+            </div>
+            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/react.dev/'">
+                <img src="/assets/images/api-platform.png" alt="JavaScript">
+                <p>Api-platform</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h2>Clicker Simulator on Roblox <span class="version">1.0</span></h2>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>          
+                <div class="project-content">
+                    <div class="description-box">
+                        <div class="description-header">
+                            <span class="description-icon">📜</span>
+                            <h4>Description du jeu</h4>
+                        </div>
+                        <p class="description-text">
+                            C'est un jeu de type clicker simulator composé de :<br>
+                            <span class="highlight">🔁 Rebirth</span> (système de renaissance),<br>
+                            <span class="highlight">🐾 Pets</span> évolutifs pour le joueur,<br>
+                            <span class="highlight">🏝️ Îles</span> thématiques à débloquer
+                        </p>
+                    </div>
+                    <ul class="project-checklist">
+                        <li>
+                            <div class="last-update">
+                                Last update: <span class="update-date">29 janvier 2025</span>
+                                Ajout d'un shop 
+                            </div>
+                        </li>
+                        
+                        <li class="completed">
+                            <span class="checkmark">✓</span>
+                            Rebirth
+                        </li>
+                        <li class="completed">
+                            <span class="checkmark">✓</span>
+                            Pets
+                        </li>
+                        <li class="in-progress">
+                            <span class="spinner"></span>
+                            Shop pour acheter des pets et des boutons de rebirths
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="github-section">
+        <h2>Mes Projets GitHub</h2>
+        <div id="github-repos" class="repos-grid"></div>
+    </section>
+    <!-- Section Contact -->
+<section class="contact-section section">
+    <h2>🚀 Collaborons ensemble</h2>
     
-    <section class="skills">
-        <h2>Frameworks et Outils</h2>
-        <div class="icons">
-            <div class="icon"><i class="fas fa-gem"></i> Symfony</div>
-            <div class="icon"><i class="fas fa-network-wired"></i> API Platform</div>
-            <div class="icon"><i class="fab fa-react"></i> React</div>
+    <div class="contact-grid">
+        <!-- Carte Contact -->
+        <div class="contact-card card">
+            <div class="contact-method">
+                <i class="fas fa-paper-plane"></i>
+                <h3>Email</h3>
+                <a href="mailto:grazexdev@gmail.com" class="contact-link">grazexdev@gmail.com</a>
+            </div>
         </div>
-    </section>
+
+        <!-- Carte GitHub -->
+        <div class="contact-card card">
+            <div class="contact-method">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <a href="https://github.com/Grazex24" target="_blank" class="contact-link">github.com/Grazex24</a>
+                <small>2+ repositories publics</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mini Formulaire Optionnel -->
+    <!-- Remplace le formulaire par -->
+<div class="status-card card">
+    <p>🔍 Actuellement ouvert aux opportunités en <strong>développement</strong></p>
+</div>
+</section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, 100); // Délai pour un effet progressif
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+    const reposContainer = document.getElementById('github-repos');
+
+    // Gestion des erreurs
+    function showError(message) {
+        reposContainer.innerHTML = `<p class="error">${message}</p>`;
+    }
+
+    // Appel API avec authentification (optionnel)
+    fetch(`https://api.github.com/users/Grazex24/repos`, {
+        headers: {
+            // Enlève le commentaire ci-dessous si tu veux utiliser un token
+            // 'Authorization': 'token TON_TOKEN_GITHUB'
+        }
+    })
+    .then(response => {
+        if (!response.ok) throw new Error(`Erreur HTTP: ${response.status}`);
+        return response.json();
+    })
+    .then(repos => {
+        if (repos.length === 0) {
+            showError("Aucun repository public trouvé.");
+            return;
+        }
+
+        reposContainer.innerHTML = repos.map(repo => `
+            <div class="repo-card">
+                <h3>${repo.name}</h3>
+                <p>${repo.description || "Pas de description"}</p>
+                <p>⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count}</p>
+                <a href="${repo.html_url}" target="_blank">Voir le code</a>
+            </div>
+        `).join('');
+    })
+    .catch(error => {
+        showError(`Impossible de charger les repositories : ${error.message}`);
+        console.error("Erreur GitHub API:", error);
+    });
+});AOS.init();
+// Copie automatique de l'email au clic
+document.querySelectorAll('.contact-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        if(link.href.startsWith('mailto:')) {
+            navigator.clipboard.writeText('grazexdev@gmail.com');
+            link.textContent = 'Email copié ! 📋';
+            setTimeout(() => link.textContent = 'grazexdev@gmail.com', 2000);
+        }
+    });
+});
+
+    </script>
 </body>
 </html>
