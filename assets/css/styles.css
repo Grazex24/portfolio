@@ -1,14 +1,17 @@
 /* --- VARIABLES & RESET --- */
 :root {
-    --bg-color: #1a1a2e;        
-    --card-bg: #16213e;       
-    --text-primary: #e94560;   
-    --text-secondary: #b2b2b2;  
-    --text-white: #ffffff;     
-    --accent-color: #0f3460;    
-    --highlight: #e94560;     
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --text-primary: #e94560;
+    --text-secondary: #b2b2b2;
+    --text-white: #ffffff;
+    --accent-color: #0f3460;
+    --highlight: #e94560; 
     --nav-bg: rgba(26, 26, 46, 0.95);
-    --gold: #ffd700;           
+    
+    /* Couleurs Spéciales Trophées */
+    --gold: #ffd700;
+    --tech-blue: #007BFF;
 }
 
 body {
@@ -348,14 +351,19 @@ a {
     text-align: left;
 }
 
-/* Style Cadre Doré */
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+/* BORDURES ET COULEURS SPECIALES */
 .gold-border {
     border: 2px solid var(--gold);
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
 }
 
-.achievement-card:hover {
-    transform: translateY(-5px);
+.blue-border {
+    border: 2px solid var(--tech-blue);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.1);
 }
 
 .achievement-header {
@@ -367,7 +375,6 @@ a {
 }
 
 .trophy-icon {
-    background: rgba(255, 215, 0, 0.1);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -377,9 +384,20 @@ a {
     flex-shrink: 0;
 }
 
-.trophy-icon i {
-    font-size: 1.8rem;
+.gold-icon {
+    background: rgba(255, 215, 0, 0.1);
+}
+.gold-icon i {
     color: var(--gold);
+    font-size: 1.8rem;
+}
+
+.blue-icon {
+    background: rgba(0, 123, 255, 0.1);
+}
+.blue-icon i {
+    color: var(--tech-blue);
+    font-size: 1.8rem;
 }
 
 .achievement-meta h3 {
@@ -398,6 +416,15 @@ a {
 .badge-gold {
     background: var(--gold);
     color: #1a1a2e;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.badge-blue {
+    background: var(--tech-blue);
+    color: white;
     padding: 4px 12px;
     border-radius: 20px;
     font-weight: bold;
@@ -431,16 +458,21 @@ a {
 }
 
 .achievement-list li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;     /* Un peu plus d'espace entre les lignes */
     color: #ddd;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start; /* Aligne l'icône en haut au lieu du centre */
+    gap: 15px;               /* Espace entre l'icône et le texte */
+    line-height: 1.5;
 }
 
+/* Ajustement pour centrer visuellement l'icône avec la première ligne de texte */
 .achievement-list li i {
-    color: var(--gold);
+    margin-top: 5px; 
+    flex-shrink: 0; /* Empêche l'icône de s'écraser si le texte est long */
 }
+.gold-text { color: var(--gold); }
+.blue-text { color: var(--tech-blue); }
 
 .achievement-gallery {
     display: flex;
@@ -557,21 +589,8 @@ a {
     .navbar {
         padding: 15px 20px;
     }
-    
-    .nav-links {
-        display: none; 
-    }
-    
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-
-    .achievement-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .achievement-gallery {
-        justify-content: center;
-    }
+    .nav-links { display: none; }
+    .hero-text h2 { font-size: 2rem; }
+    .achievement-header { flex-direction: column; text-align: center; }
+    .achievement-gallery { justify-content: center; }
 }

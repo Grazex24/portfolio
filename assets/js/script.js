@@ -18,14 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.contact-link').forEach(link => {
         link.addEventListener('click', (e) => {
             if(link.href.startsWith('mailto:') || link.textContent.includes('@')) {
-                // On laisse le mailto s'ouvrir, mais on copie aussi l'adresse
-                // e.preventDefault(); // Décommenter si tu veux bloquer l'ouverture de l'app mail
                 navigator.clipboard.writeText('grazexdev@gmail.com');
-                
                 const originalText = link.textContent;
                 link.textContent = 'Email copié ! 📋';
                 link.style.color = '#00b894'; // Vert succès
-                
                 setTimeout(() => {
                     link.textContent = originalText;
                     link.style.color = '';
@@ -38,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const reposContainer = document.getElementById('github-repos');
     
     if(reposContainer) {
-        // Appel à l'API GitHub pour tes repos publics
         fetch(`https://api.github.com/users/Grazex24/repos?sort=updated`)
         .then(response => {
             if (!response.ok) throw new Error(`Erreur HTTP: ${response.status}`);
@@ -49,10 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 reposContainer.innerHTML = `<p>Aucun repository public trouvé.</p>`;
                 return;
             }
-
-            // On prend les 4 derniers repos mis à jour pour ne pas surcharger
             const recentRepos = repos.slice(0, 4);
-
             reposContainer.innerHTML = recentRepos.map(repo => `
                 <div class="repo-card" data-aos="fade-up">
                     <h3>${repo.name}</h3>
@@ -65,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
             `).join('');
         })
         .catch(error => {
-            reposContainer.innerHTML = `<p style="color: #e94560;">Impossible de charger les projets GitHub (API Limit).</p>`;
+            reposContainer.innerHTML = `<p style="color: #e94560;">Impossible de charger les projets GitHub.</p>`;
             console.error("Erreur GitHub:", error);
         });
     }
