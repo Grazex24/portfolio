@@ -1,77 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Langages</title>
+    <title>Portfolio - Grazex</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <section class="about-section">
-        <h2 class="fade-in">À propos de moi</h2>
-        <p class="fade-in">Je suis <span class="highlight">Grazex</span>, un développeur en informatique depuis mes 15 ans, spécialisé dans le développement de <span class="highlight">jeux vidéo</span> et passionné par la création de contenus utiles et interactives.</p>
-        <p class="fade-in">Avec une solide expérience en <span class="highlight">Php</span>, <span class="highlight">C++</span>, et d'autres langages, j'aime repousser les limites de la technologie pour donner vie à des idées innovantes.</p>
-    </section>
-    </div>
-    <section class="section">
-        <h2>Langages</h2>
-        <div class="grid">
-            <div class="card"  data-aos="fade-up" onclick="location.href='https:/\/cplusplus.com/'">
-                <img src="assets/images/cplusplus.png" alt="Python">
-                <p>C++</p>
-            </div>
-            <div class="card"  data-aos="fade-up" onclick="location.href='https:/\/docs.python.org/3/'">
-                <img src="assets/images/python.png" alt="Python">
-                <p>Python</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/www.php.net/docs.php'">
-                <img src="assets/images/php.png" alt="PHP">
-                <p>PHP</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/developer.mozilla.org/en-US/docs/Web/JavaScript'">
-                <img src="assets/images/javascript.png" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/developer.mozilla.org/en-US/docs/Web/HTML'">
-                <img src="assets/images/html.png" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/developer.mozilla.org/en-US/docs/Web/CSS'">
-                <img src="assets/images/css.png" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/fr.wikipedia.org/wiki/Structured_Query_Language'">
-                <img src="assets/images/sql.png" alt="SQL">
-                <p>SQL</p>
+
+    <nav class="navbar">
+        <div class="nav-logo">Grazex<span class="highlight">.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="fade-in">Salut, je suis <span class="highlight">Grazex</span> 👋</h2>
+                <p class="fade-in">Développeur passionné depuis mes 15 ans. Je crée des <span class="highlight">jeux vidéo</span> immersifs, des expériences web interactives et je me forme en cybersécurité.</p>
+                <p class="fade-in sub-text">Expert en C++, Lua (Roblox) & Web.</p>
+                
+                <div class="cta-buttons fade-in">
+                    <a href="#projects" class="btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn-secondary">Me contacter</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="skills" class="section">
+        <h2>Langages & Outils</h2>
+        <div class="grid">
+            <a href="https://cplusplus.com/" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/cplusplus.png" alt="C++">
+                <p>C++</p>
+            </a>
+            <a href="https://docs.python.org/3/" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/python.png" alt="Python">
+                <p>Python</p>
+            </a>
+            <a href="https://www.php.net/docs.php" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/php.png" alt="PHP">
+                <p>PHP</p>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/javascript.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/html.png" alt="HTML">
+                <p>HTML</p>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/css.png" alt="CSS">
+                <p>CSS</p>
+            </a>
+            <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/sql.png" alt="SQL">
+                <p>SQL</p>
+            </a>
+        </div>
+    </section>
+
     <section class="section">
         <h2>Frameworks</h2>
         <div class="grid">
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/symfony.com/'">
-                <img src="assets/images/symfony.png" alt="Python">
+            <a href="https://symfony.com/" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/symfony.png" alt="Symfony">
                 <p>Symfony</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/api-platform.com/'">
-                <img src="assets/images/react.png" alt="PHP">
+            </a>
+            <a href="https://react.dev/" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/react.png" alt="React">
                 <p>React</p>
-            </div>
-            <div class="card" data-aos="fade-up" onclick="location.href='https:/\/react.dev/'">
-                <img src="assets/images/api-platform.png" alt="JavaScript">
+            </a>
+            <a href="https://api-platform.com/" target="_blank" class="card" data-aos="fade-up">
+                <img src="assets/images/api-platform.png" alt="API Platform">
                 <p>Api-platform</p>
-            </div>
+            </a>
         </div>
     </section>
-    <section class="projects-section">
+
+    <section id="projects" class="projects-section">
         <h2>Mes Projets</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-header">
-                    <h2>Clicker Simulator on Roblox <span class="version">1.3</span></h2>
+                    <h2>Clicker Simulator <span class="version">1.3</span></h2>
                     <div class="progress-bar">
                         <div class="progress" style="width: 100%"></div>
                     </div>
@@ -80,25 +109,22 @@
                     <div class="description-box">
                         <div class="description-header">
                             <span class="description-icon">📜</span>
-                            <h4>Description du jeu</h4>
+                            <h4>Description</h4>
                         </div>
                         <p class="description-text">
                             <strong>🌀 Hyper Click Simulator 🐾</strong><br>
-                            Bienvenue dans Hyper Click Simulator, le jeu ultime de clicking et de collection de pets !<br>
-                            Clique à la vitesse de la lumière pour gagner des clics, débloque des pets légendaires, explore des îles mystiques et deviens le meilleur joueur du serveur ! 💥
-                            <br><br>
-                            <strong>🎯 Objectifs :</strong><br>
-                            ⚡ Clique pour générer des clics<br>
-                            🐉 Achète des œufs et découvre des pets rares et puissants<br>
-                            🏝️ Voyage à travers des îles uniques, chacune avec ses propres challenges<br>
-                            🔁 Améliore ta progression avec des Gamepasses, rebirths, et boosts<br>
-                            🏆 Grimpe dans les classements mondiaux et prouve ta puissance !
-                            <br><br>
-                            <strong>🚀 <a href="https://www.roblox.com/fr/games/16198445306/HyperClick-Simulator" target="_blank" rel="noopener noreferrer">Essayez le jeu ici !</a></strong>
-                            </p>
+                            Le jeu ultime de clicking et de collection sur Roblox !<br><br>
+                            <strong>🎯 Features :</strong><br>
+                            ⚡ Système de clics optimisé<br>
+                            🐉 Système de Pets et d'Oeufs<br>
+                            🏝️ Mondes multiples à explorer<br>
+                            🏆 Leaderboards mondiaux
+                        </p>
+                        <a href="https://www.roblox.com/fr/games/16198445306/HyperClick-Simulator" target="_blank" class="demo-button">Jouer maintenant 🚀</a>
                     </div>
                 </div>
             </div>
+
             <div class="project-card" data-aos="fade-up">
                 <div class="project-header">
                     <h2>Space Shooter <span class="version">1.0</span></h2>
@@ -107,26 +133,24 @@
                     </div>
                 </div>          
                 <div class="project-content">    
-                    <div style="padding: 20px 20px 0 20px;">
-                        <video controls style="width: 100%; border-radius: 8px;">
+                    <div class="video-container">
+                        <video controls>
                             <source src="assets/videos/VideoDemoSpace_shooter.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la balise vidéo.
                         </video>
                     </div>
                     <div class="description-box">
                         <div class="description-header">
-                            <span class="description-icon">📜</span>
-                            <h4>Description du jeu</h4>
+                            <span class="description-icon">🚀</span>
+                            <h4>Concept</h4>
                         </div>
                         <p class="description-text">
-                            <strong>🚀 Space Shooter 🌌</strong><br>
-                            Un jeu de tir dans l'espace où vous devez survivre à des asteroides.<br>
-                            Pilotez votre vaisseau, détruisez les asteroides et visez le meilleur score !
-                            <br><br>
+                            Un jeu de survie spatial intense. Pilotez, esquivez les astéroïdes et atteignez le high score.
                         </p>
                     </div>
                 </div>
             </div>
+
             <div class="project-card" data-aos="fade-up">
                 <div class="project-header">
                     <h2>Tower Defence <span class="version">1.0</span></h2>
@@ -135,59 +159,98 @@
                     </div>
                 </div>          
                 <div class="project-content">    
-                    <div style="padding: 20px 20px 0 20px;">
-                        <video controls style="width: 100%; border-radius: 8px;">
+                    <div class="video-container">
+                        <video controls>
                             <source src="assets/videos/VideoDemoTower_Defence.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la balise vidéo.
                         </video>
                     </div>
                     <div class="description-box">
                         <div class="description-header">
-                            <span class="description-icon">📜</span>
-                            <h4>Description du jeu</h4>
+                            <span class="description-icon">🛡️</span>
+                            <h4>Concept</h4>
                         </div>
                         <p class="description-text">
-                            <strong>🚀 Tower Defence 🌌</strong><br>
-                            Un Tower Defence sur une île où vous devez empecher les aliens d'arriver a la tour.<br>
-                            Améliorez vos tourelles pour détruire les aliens !
-                            <br><br>
+                            Empêchez les aliens d'atteindre la tour ! Un jeu de stratégie avec placement de tourelles et vagues d'ennemis.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="github-section">
-        <h2>Mes Projets GitHub</h2>
-        <div id="github-repos" class="repos-grid"></div>
+
+    <section id="experience" class="section experience-section">
+        <h2>Expériences</h2>
+        
+        <div class="achievements-container">
+            <div class="achievement-card gold-border" data-aos="fade-up">
+                <div class="achievement-header">
+                    <div class="trophy-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-meta">
+                        <h3>Hackfest 2025 - Beginner CTF</h3>
+                        <div class="badges">
+                            <span class="badge-gold">🥇 1ère Place sur 165</span>
+                            <span class="badge-tag">Full Clear</span>
+                        </div>
+                        <span class="date">Octobre 2025 • Québec</span>
+                    </div>
+                </div>
+                
+                <div class="achievement-content">
+                    <p>
+                        C’était mon tout premier Hackfest, et j’ai eu la surprise et la fierté de terminer <strong>1er sur 165 participants</strong>. 
+                        J'ai été invité par mon école suite à une qualification sur le campus.
+                    </p>
+                    <ul class="achievement-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Performance :</strong> Seul participant à avoir terminé 100% des challenges.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Compétences :</strong> Cryptographie, Reverse Engineering, Web.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Résultat :</strong> Découverte immersive de la communauté cybersécurité.</li>
+                    </ul>
+                </div>
+
+                <div class="achievement-gallery">
+                    <img src="assets/images/hackfest-leaderboard.png" alt="Classement 1er Place">
+                    <img src="assets/images/hackfest-stats.png" alt="Graphique de progression">
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- Section Contact -->
-<section class="contact-section section">
-    <h2>🚀 Collaborons ensemble</h2>
-    
-    <div class="contact-grid">
-        <!-- Carte Contact -->
-        <div class="contact-card card">
-            <div class="contact-method">
-                <i class="fas fa-paper-plane"></i>
-                <h3>Email</h3>
-                <a href="mailto:grazexdev@gmail.com" class="contact-link">grazexdev@gmail.com</a>
+
+    <section class="github-section">
+        <h2>Contributions GitHub</h2>
+        <div id="github-repos" class="repos-grid">
+            <p style="color: #888;">Chargement des repos...</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section">
+        <h2>🚀 Collaborons ensemble</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-card card">
+                <div class="contact-method">
+                    <i class="fas fa-paper-plane"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:grazexdev@gmail.com" class="contact-link">grazexdev@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-card card">
+                <div class="contact-method">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Grazex24" target="_blank" class="contact-link">github.com/Grazex24</a>
+                    <small>Projets Open Source</small>
+                </div>
             </div>
         </div>
-        <!-- Carte GitHub -->
-        <div class="contact-card card">
-            <div class="contact-method">
-                <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
-                <a href="https://github.com/Grazex24" target="_blank" class="contact-link">github.com/Grazex24</a>
-                <small>2+ repositories publics</small>
-            </div>
+        
+        <div class="status-card card">
+            <p>🔍 Actuellement ouvert aux opportunités en <strong>développement de jeux & web</strong></p>
         </div>
-    </div>
-<div class="status-card card">
-    <p>🔍 Actuellement ouvert aux opportunités en <strong>développement</strong></p>
-</div>
-</section>
-<script src="assets/js/script.js" defer></script>
+    </section>
+
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
