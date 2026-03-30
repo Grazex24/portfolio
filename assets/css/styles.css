@@ -594,3 +594,30 @@ a {
     .achievement-header { flex-direction: column; text-align: center; }
     .achievement-gallery { justify-content: center; }
 }
+
+/* Thème Rouge/Highlight (CSGames) */
+.red-border {
+    border: 2px solid var(--highlight);
+    box-shadow: 0 0 20px rgba(233, 69, 96, 0.1);
+}
+
+.red-icon {
+    background: rgba(233, 69, 96, 0.1);
+}
+.red-icon i {
+    color: var(--highlight);
+    font-size: 1.8rem;
+}
+
+.badge-red {
+    background: var(--highlight);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.red-text { 
+    color: var(--highlight); 
+}
